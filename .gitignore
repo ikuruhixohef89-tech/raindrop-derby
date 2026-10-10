@@ -1,0 +1,15 @@
+# Source video and its frames are someone else's content: never commit them.
+*.mp4
+*.mov
+*.webm
+
+node_modules/
+.env*
+tools/out/
+
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Internal draft for the site entry
+site/entry.md

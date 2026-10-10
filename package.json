@@ -1,0 +1,17 @@
+{
+  "name": "raindrop-derby",
+  "version": "0.1.0",
+  "private": true,
+  "description": "You are a raindrop on a car window. Race the other drops to the bottom.",
+  "type": "module",
+  "scripts": {
+    "serve": "node tools/serve.mjs",
+    "test": "node --test tools/tests/",
+    "check": "node tools/check.mjs",
+    "stats": "node tools/sim-stats.mjs",
+    "stats:survival": "node tools/sim-survival.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

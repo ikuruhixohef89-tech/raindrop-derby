@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Raindrop Derby</title>
+<link rel="stylesheet" href="./src/ui/ui.css">
+<link rel="modulepreload" href="./src/main.js">
+<link rel="modulepreload" href="./vendor/three.min.js">
+<link rel="modulepreload" href="./src/config.js">
+<link rel="modulepreload" href="./src/strings.js">
+<link rel="modulepreload" href="./src/core/storage.js">
+<link rel="modulepreload" href="./src/core/input.js">
+<link rel="modulepreload" href="./src/core/rng.js">
+<link rel="modulepreload" href="./src/sim/world.js">
+<link rel="modulepreload" href="./src/sim/physics.js">
+<link rel="modulepreload" href="./src/sim/noise.js">
+<link rel="modulepreload" href="./src/sim/ai.js">
+<link rel="modulepreload" href="./src/sim/hazards.js">
+<link rel="modulepreload" href="./src/sim/upgrades.js">
+<link rel="modulepreload" href="./src/sim/modes.js">
+<link rel="modulepreload" href="./src/render/scene.js">
+<link rel="modulepreload" href="./src/render/backdrop.js">
+<link rel="modulepreload" href="./src/render/shaders.js">
+<link rel="modulepreload" href="./src/audio/audio.js">
+<link rel="modulepreload" href="./src/ui/hud.js">
+<link rel="modulepreload" href="./src/ui/screens.js">
+</head>
+<body>
+<div id="stage"></div>
+<div id="hud" class="hud hidden" aria-live="polite">
+  <div class="hud-standings" id="standings"></div>
+  <div class="hud-center">
+    <div class="hud-place" id="hudPlace">1st</div>
+    <div class="hud-time" id="hudTime">0.0 s</div>
+  </div>
+  <div class="hud-stage" id="hudStage"></div>
+  <div class="lives" id="lives"></div>
+  <div class="hud-meters">
+    <div class="meter"><span id="massLabel">Mass</span><div class="bar"><i id="massBar"></i></div></div>
+    <div class="meter"><span id="clingLabel">Cling</span><div class="bar"><i id="clingBar"></i></div></div>
+  </div>
+  <div class="chain" id="chain"><b id="chainN"></b><div class="bar"><i id="chainBar"></i></div></div>
+  <div class="ups" id="ups"></div>
+  <div class="banner" id="banner"></div>
+  <div class="countdown" id="countdown"></div>
+  <div class="hint" id="hint"></div>
+  <div class="touch" id="touch">
+    <button class="tbtn" data-hold="left" aria-label="Steer left" id="tLeft"></button>
+    <button class="tbtn tcling" data-hold="cling" id="tCling"></button>
+    <button class="tbtn" data-hold="right" aria-label="Steer right" id="tRight"></button>
+  </div>
+</div>
+<div id="screens"></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
